@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Kalculate(operator){
+
+            let input1 = document.getElementById('prvi2');
+            let input2 = document.getElementById('drugi2');
+
+            let value1 = parseInt(input1.value);
+            let value2 = parseInt(input2.value);
+
+            let ispis1;
+            let ispis2;
+
+            switch(operator){
+                case 1:
+                    operator == Zbroj;
+                    ispis1 = value1 + value2;
+                    break;
+                case 2:
+                    operator == Oduzmi;
+                    ispis1 = value1 - value2;
+                    break;
+                case 3:
+                    operator == Pomnozi;
+                    ispis1 = value1 * value2;
+                    break;
+                case 4:
+                    operator == Podjeli;
+                    ispis1 = value1 / value2;
+                    break;
+                case 5:
+                    operator == sin;
+                    ispis1 = Math.sin(value1/value2);
+                    break;
+                case 6:
+                    operator == cos;
+                    ispis1 = Math.cos(value1/value2);
+                    break;
+                case 7:
+                    operator == tan;
+                    ispis1 = Math.tan(value1/value2);
+                    break;
+                case 8:
+                    operator == ln;
+                    ispis1 = Math.ln(value1);
+                    ispis2 = Math.ln(value2);
+                    break;
+                    
+                case 9:
+                    operator == log;
+                    ispis1 = Math.log(value1);
+                    ispis2 = Math.log(value2);
+                    break;
+
+                case 10:
+                    operator == Kvadriraj;
+                    ispis1 = Math.pow(value1);
+                    ispis2 = Math.pow(value2);
+                    break;
+
+                case 11:
+                    operator == Kubiraj;
+                    ispis1 = Math.cube(value1);
+                    ispis2 = Math.cube(value2);
+                    break;
+                case 12:
+                    operator == Ntu;
+                    ispis1 = Math.pow(value1);
+                    ispis2 = Math.pow(value2);
+                    break;   
+            }
+
+            if(ispis1 !== null){
+                if(ispis2 !== null){
+                    alert(ispis1 + ispis2);
+                }
+                alert(ispis1);
+            }
+
+            
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+    <div><input type="text" id="prvi2"> operand1</div>
+    <div><input type="text" id="drugi2"> operand2</div>
+
+    <div>
+        <button onclick="Kalculate('Zbroj')">+</button>
+        <button onclick="Kalculate('Oduzmi')">-</button>
+        <button onclick="Kalculate('Pomnozi')">*</button>
+        <button onclick="Kalculate('Podjeli')">/</button>
+    </div>
+
+    <div>
+        <button onclick="Kalculate('sin')">sin</button>
+        <button onclick="Kalculate('cos')">cos</button>
+        <button onclick="Kalculate('tan')">tan</button>
+    </div>
+
+    <div>
+        <button onclick="Kalculate('ln')">ln</button>
+        <button onclick="Kalculate('log')">log</button>
+    </div>
+
+    <div>
+        <button onclick="Kalculate('Kvadriraj')">2^</button>
+        <button onclick="Kalculate('Kubiraj')">3^</button>
+        <button onclick="Kalculate('Ntu')">n^</button>
+
+    </div>
+
+    
+
+</body>
+</html>

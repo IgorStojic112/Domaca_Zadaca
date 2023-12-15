@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        function ooo(){
+            return Math.floor(Math.random()* 256);
+        }
+
+        function Crvena(){
+        document.body.style.backgroundColor = "#"+(ooo()).toString(16)+(ooo()).toString(16)+(ooo()).toString(16);
+        document.getElementById("text").innerHTML = "#"+(ooo()).toString(16)+(ooo()).toString(16)+(ooo()).toString(16);
+        }
+
+    </script>   
+</head>
+<body>
+    
+    <input type="button" value="Promjeni pozadinu" id="dugme" onclick="Crvena()">
+    <div id="text"></div>
+
+</body>
+</html>

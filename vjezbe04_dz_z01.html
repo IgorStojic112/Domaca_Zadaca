@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let brojevi = prompt("Unesite brojeve");
+        
+
+        var arit = 0;
+        var geo = 1;
+        var brojpon = 1;
+
+        
+        
+
+        for(i = 0; i <= brojevi.length;i++){
+            if(brojevi[i] === ","){
+                arit = arit[1] + brojevi[i-1];
+                geo *= brojevi[i-1];
+                brojpon++;
+                
+            }
+        }
+
+        alert(arit);
+        alert(geo);
+
+        arit = arit / brojpon;
+        geo = Math.pow(geo,1/brojpon);
+        
+        alert(brojpon);
+        alert(arit);
+        alert(geo);
+
+
+
+
+    </script>
+</body>
+</html>
+

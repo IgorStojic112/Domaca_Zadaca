@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Zbroji(){
+            let input1 = document.getElementById('prvi');
+            let input2 = document.getElementById('drugi');
+
+            let value1 = parseInt(input1.value);
+            let value2 = parseInt(input2.value);
+
+            let zbroj = value1 + value2;
+
+            document.getElementById('rez').value = zbroj;
+        }
+    </script>
+
+    <div>X = <input type="text" id="prvi"></div>
+    <div>X = <input type="text" id="drugi"></div>
+    <button onclick="Zbroji()">Zbroji</button>
+
+    <hr>
+    <div>Rezultat = <input type="text" id="rez" value=""></div>
+
+</body>
+</html>

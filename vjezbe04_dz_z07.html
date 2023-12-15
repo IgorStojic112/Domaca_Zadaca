@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function godine(){
+
+            let input1 = document.getElementById('ooo');
+            let value1 = parseInt(input1.value);
+
+            let datum = new Date();
+
+            let ispis = datum.getFullYear() - value1;
+            
+            alert("Korisnik ima : " + ispis + " godine");
+        }
+    </script>
+
+
+    <div>Unesite dan (1-31) <input type="text"></div>
+    <div>Unesite mjesec (1-12) <input type="text"></div>
+    <div>Unesite godinu (npr 1970) <input type="text" id="ooo"></div>
+
+    <button onclick="godine()">Izracunaj</button>
+
+
+</body>
+</html>

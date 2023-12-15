@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function istinitost(Paramaetar){
+            
+            var values = Paramaetar.split(',');
+
+            if (
+                typeof(values[0]) === "string" &&
+                typeof(values[3]) === "string" &&
+                typeof(values[1]) === "number" &&
+                typeof(values[2]) === "number" &&
+                typeof(values[4]) === "number" &&
+                typeof(values[5]) === "number" &&
+                typeof(values[6]) === "number"
+            ) {
+                console.log("true");
+                return true;
+            } else {
+                console.log("false");
+                return false;
+            }
+        }
+
+        
+    </script>
+</head>
+<body>
+        <input type="text" id="vvv" >
+        <button onclick="istinitost(document.getElementById('vvv').value)">Enter</button>
+</body>
+</html>
